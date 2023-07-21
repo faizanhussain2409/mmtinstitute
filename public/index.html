@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Site Metas -->
+<title>MMT INSTITUTE</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Site Icons -->
+<link rel="shortcut icon" href="images/MMT Final logo.jpg" type="image/x-icon" />
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Site CSS -->
+<link rel="stylesheet" href="style.css">
+<!-- ALL VERSION CSS -->
+<link rel="stylesheet" href="css/versions.css">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/custom.css">
+
+<!-- Modernizer for Portfolio -->
+<script src="js/modernizer.js"></script>
+
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="host_version">
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header tit-up">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Customer Login</h4>
+                </div>
+                <div class="modal-body customer-box">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs">
+                        <li><a class="active" href="#Login" data-toggle="tab">Login</a></li>
+                        <li><a href="#Registration" data-toggle="tab">Registration</a></li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="Login">
+                            <form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="email1" placeholder="Name" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="exampleInputPassword1" placeholder="Email"
+                                            type="email">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+                                            Submit
+                                        </button>
+                                        <a class="for-pwd" href="javascript:;">Forgot your password?</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane" id="Registration">
+                            <form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" placeholder="Name" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="email" placeholder="Email" type="email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="mobile" placeholder="Mobile" type="email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="password" placeholder="Password"
+                                            type="password">-
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <button type="button" class="btn btn-light btn-radius btn-brd grd1">
+                                            Save &amp; Continue
+                                        </button>
+                                        <button type="button" class="btn btn-light btn-radius btn-brd grd1">
+                                            Cancel</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader-container">
+            <div class="progress-br float shadow">
+                <div class="progress__item"></div>
+            </div>
+        </div>
+    </div>
+    <!-- END LOADER -->
+
+    <!-- Start header -->
+
+
+    <header class="top-navbar">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: 65px;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/MMT Final logo.jpg" alt="INSTITUTE"
+                        style="width: 60px; height:60px; border-radius:15px ;" />
+                </a>
+                <h2 class="red-text"
+                    style="color: white; width: 250px; height:30px; font-size: 25px; font-family: 'Times New Roman', Times, serif; ">
+                    MMT INSTITUTE</h2>
+
+
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host"
+                    aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbars-host">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+
+                        <li class="nav-item dropdown position-static">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-mdb-toggle="dropdown" aria-expanded="false">
+                                Courses
+                            </a>
+                            <!-- Dropdown menu -->
+                            <div class="dropdown-menu w-100 mt-0" aria-labelledby="navbarDropdown" style="
+                                            border-top-left-radius: 0;
+                                            border-top-right-radius: 0;
+                                          ">
+                                <div class="container">
+                                    <div class="row my-4">
+                                        <div class="col-md-6 col-lg-3">
+
+                                            <div class="list-group list-group-flush">
+
+                                                <a href="" class="list-group-item list-group-item-action">MASTER DIPLOMA
+                                                    IN
+                                                    <br>FULL STACK WEB DEVELOPMENT(12-MONTHS)</a>
+
+                                                <a href="" class="list-group-item list-group-item-action">FULL PYTHON
+                                                    COURSE CORE
+                                                    +ADVANCE<br>(3-MONTHS)</a>
+                                                <a href="" class="list-group-item list-group-item-action">FULL JAVA
+                                                    COURSE<BR> CORE +
+                                                    ADVANCE<BR>(3-MONTHS)</a>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-3">
+
+                                            <div class="list-group list-group-flush">
+
+                                                <a href="" class="list-group-item list-group-item-action">MASTER DIPLOMA
+                                                    IN MACHINE
+                                                    LEARNING <br>(12-MONTHS)</a>
+
+                                                <a href="" class="list-group-item list-group-item-action">
+                                                    MASTER DIPLOMA IN <bR> DATA SCIENCE(12-MONTHS) </a>
+                                                <a href="" class="list-group-item list-group-item-action">CERTIFICATION
+                                                    COURSE IN DATA STRUCTURE <BR>(6-MONTHS)</a>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-3">
+
+                                            <div class="list-group list-group-flush">
+
+                                                <a href="" class="list-group-item list-group-item-action">MASTER DIPLOMA
+                                                    IN ARTIFICIAL INTELLIGENCE
+                                                    <BR>(12-MONTHS)</a>
+
+
+                                                <a href="" class="list-group-item list-group-item-action">
+                                                    SOFTWARE TESTING<BR> (3-MONTHS)</a>
+
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="col-md-6 col-lg-3">
+
+                                            <div class="list-group list-group-flush">
+
+                                                <a href="" class="list-group-item list-group-item-action">MASTER DIPLOMA
+                                                    IN <BR>DATA ANALYTICS <BR>(12-MONTHS)
+                                                </a>
+
+                                                <a href="" class="list-group-item list-group-item-action">DIGITAL
+                                                    MARKETING
+                                                    <BR>(3-MONTHS)</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+
+
+
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="hover-btn-new log orange" href="#" data-toggle="modal"
+                                data-target="#login"><span>Book Now</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End header -->
+
+
+    <div id="carouselExampleControls" class="carousel slide bs-slider box-slider" data-ride="carousel"
+        data-pause="hover" data-interval="false">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+            <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <div id="home" class="first-section" style="background-image:url('images/student.jpg');">
+                    <div class="dtab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 text-right">
+                                    <div class="big-tagline">
+                                        <h2><strong> </strong> </h2>
+                                        <p class="lead"> </p>
+                                        <!-- <a href="#" class="hover-btn-new"><span>Contact Us</span></a>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <a href="#" class="hover-btn-new"><span>Read More</span></a>-->
+                                    </div>
+                                </div>
+                            </div><!-- end row -->
+                        </div><!-- end container -->
+                    </div>
+                </div><!-- end section -->
+            </div>
+            <div class="carousel-item">
+                <div id="home" class="first-section" style="background-image:url('images/education image 1.avif');">
+                    <div class="dtab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 text-left">
+                                    <div class="big-tagline">
+                                        <h2 data-animation="animated zoomInRight"> <strong>
+                                            </strong></h2>
+                                        <p class="lead" data-animation="animated fadeInLeft"> </p>
+                                        <!--<a href="#" class="hover-btn-new"><span>Contact Us</span></a>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <a href="#" class="hover-btn-new"><span>Read More</span></a>-->
+                                    </div>
+                                </div>
+                            </div><!-- end row -->
+                        </div><!-- end container -->
+                    </div>
+                </div><!-- end section -->
+            </div>
+            <div class="carousel-item">
+                <div id="home" class="first-section"
+                    style="background-image:url('images/mmt certificate.jpg');height: 100%; width: 90%;">
+                    <div class="dtab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 text-center">
+                                    <div class="big-tagline">
+                                        <h2 data-animation="animated zoomInRight"><strong></strong>
+                                        </h2>
+                                        <p class="lead" data-animation="animated fadeInLeft"></p>
+                                        <!-- <a href="#" class="hover-btn-new"><span>Contact Us</span></a>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <a href="#" class="hover-btn-new"><span>Read More</span></a>-->
+                                    </div>
+                                </div>
+                            </div><!-- end row -->
+                        </div><!-- end container -->
+                    </div>
+                </div><!-- end section -->
+            </div>
+
+            <div class="carousel-item">
+                <div id="home" class="first-section"
+                    style="background-image:url('images/mmt 2 certificate.jpg');height: 100%; width: 100%;">
+                    <div class="dtab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 text-center">
+                                    <div class="big-tagline">
+                                        <h2 data-animation="animated zoomInRight"><strong></strong>
+                                        </h2>
+                                        <p class="lead" data-animation="animated fadeInLeft"></p>
+                                        <!-- <a href="#" class="hover-btn-new"><span>Contact Us</span></a>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <a href="#" class="hover-btn-new"><span>Read More</span></a>-->
+                                    </div>
+                                </div>
+                            </div><!-- end row -->
+                        </div><!-- end container -->
+                    </div>
+                </div><!-- end section -->
+            </div>
+            <!-- Left Control -->
+            <a class="new-effect carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="fa fa-angle-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <!-- Right Control -->
+            <a class="new-effect carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="fa fa-angle-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <div id="overviews" class="section wb">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <h3>About</h3>
+                    <p class="lead">MMT Institute is one of the best technical institute which provide you the knowledge
+                        and
+                        techniquestomake Self-Employed legally through internet(like, SEO,Blogger, YouTube,
+                        Affiliate marketing, Digital Marketing and E-commerce) and also conduct classes for
+                        SEO ,Software Testing, C, C++, JAVA, Web Designing, manufacturing technology
+                        softwares like Auto Cad, staad pro , pro-e, catia , 3ds Max and Graphics designing,
+                        having experienced faculty. We at MMT institute started out as a small institute of some
+                        people from ourlocation in Bhopal, the capital of Madhya pradesh (India). OurInstitute
+                        was founded on 2015 when few Scholastic and Technical mindsets got together in the
+                        Leadership of ourteams
+                    </p>
+                </div>
+            </div><!-- end title -->
+
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="message-box">
+                        <h4> BEST INSTITUTE OF BHOPAL</h4>
+                        <h2>WELCOME TO MMT INSTITUTE</h2>
+                        <p>MMT INSTITUTE is one of the best technical institute which provide you the knowledge and
+                            techniques to make Self-Employed legally through using technical Skills (like, SEO, Blogger,
+                            YouTube, Affiliate marketing, Digital Marketing and E-commerce) and also conduct classes for
+                            SEO ,Software Testing, C, C++, JAVA, Web Designing and Graphics designing, having
+                            experienced faculties.</p>
+
+                        <p> MMT INSTITUTE is one of leading IT company near prabhat square in Bhopal. It provide
+                            multiple services in IT sector. MMT institute have a highly skilled and experienced team of
+                            IT professionals. Latest technologies are used by MMT institute for providing end to end
+                            business solution to the MMT institute's client. </p>
+
+                        <a href="#" class="hover-btn-new orange"><span>Learn More</span></a>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="post-media wow fadeIn">
+                        <img src="images/istockphoto-1344939844-170667a.webp" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+            </div>
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="post-media wow fadeIn">
+                        <img src="images/about_03.jpg" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="message-box">
+                        <h2>MMT INSTITUTE PROVIDING SERVICES FROM THE YEAR OF 2015</h2>
+                        <p>MMT INSTITUTE is one of the best technical institute which provide you the knowledge and
+                            techniques to make Self-Employed legally through internet (like, SEO, Blogger, YouTube,
+                            Affiliate marketing, Digital Marketing and E-commerce) and also conduct classes for SEO
+                            ,Software Testing, C, C++, JAVA, Web Designing and Graphics designing, having experienced
+                            faculty. We at MMT institute started out as a small institute of some people from our
+                            location in Bhopal, the capital of Madhya pradesh (India). Our Institute was founded on 2015
+                            when few Scholastic and Technical mindsets got together in the Leadership of our teams.</p>
+
+                        <p> Web Development • Software Testing • SEO • JAVA • C & C++ • Auto CAD • CATIA • Graphics
+                            Design • YouTube Earning • Blogger • E- Commerce Business • 100% Placement Offers.</p>
+
+                        <a href="#" class="hover-btn-new orange"><span>Learn More</span></a>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+
+    <div class="section cl">
+        <div class="container">
+            <div class="row text-left stat-wrap">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i
+                            class="flaticon-study"></i></span>
+                    <p class="stat_count">1000</p>
+                    <h3>Students</h3>
+                </div><!-- end col -->
+
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i
+                            class="flaticon-online"></i></span>
+                    <p class="stat_count">10</p>
+                    <h3>Courses</h3>
+                </div><!-- end col -->
+
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i
+                            class="flaticon-years"></i></span>
+                    <p class="stat_count">8</p>
+                    <h3>Years Completed</h3>
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+
+    <div id="testimonials" class="parallax section db parallax-off"
+        style="background-image:url('images/parallax_04.jpg');">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>Testimonials</h3>
+                <p> </p>
+            </div><!-- end title -->
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="testi-carousel owl-carousel owl-theme">
+                        <div class="testimonial clearfix">
+                            <div class="testi-meta">
+                                <img src="images/testi_01.png" alt="" class="img-fluid">
+                                <h4>James Fernando </h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Awesome Services!</h3>
+                                <p class="lead">“I just wanted to share a quick note and let you know that you guys do a
+                                    really good job. I'm glad I decided to work with you. It's really great how easy
+                                    your websites are to update and manage. I never have any problem at all.</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+                            <div class="testi-meta">
+                                <img src="images/testi_02.png" alt="" class="img-fluid">
+                                <h4>Jacques Philips </h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> wonderfull support!</h3>
+                                <p class="lead">Explain to you how all this mistaken idea of denouncing pleasure and
+                                    praising pain was born and I will give you completed.</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+                            <div class="testi-meta">
+                                <img src="images/testi_03.png" alt="" class="img-fluid ">
+                                <h4>Venanda Mercy </h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Great & Talented Team!</h3>
+                                <p class="lead">The master-builder of human happines no one rejects, dislikes avoids
+                                    pleasure itself, because it is very pursue pleasure. </p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+                        <div class="testimonial clearfix">
+                            <div class="testi-meta">
+                                <img src="images/testi_01.png" alt="" class="img-fluid">
+                                <h4>James Fernando </h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Wonderful Support!</h3>
+                                <p class="lead">They have got my project on time with the competition with a sed highly
+                                    skilled, and experienced & professional team.</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+                            <div class="testi-meta">
+                                <img src="images/testi_02.png" alt="" class="img-fluid">
+                                <h4>Jacques Philips </h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Awesome Services!</h3>
+                                <p class="lead">Explain to you how all this mistaken idea of denouncing pleasure and
+                                    praising pain was born and I will give you completed.</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+                            <div class="testi-meta">
+                                <img src="images/testi_03.png" alt="" class="img-fluid">
+                                <h4>Venanda Mercy </h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Great & Talented Team!</h3>
+                                <p class="lead">The master-builder of human happines no one rejects, dislikes avoids
+                                    pleasure itself, because it is very pursue pleasure. </p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div><!-- end testimonial -->
+                    </div><!-- end carousel -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <div class="parallax section dbcolor">
+        <div class="container">
+            <div class="row logos">
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/icici -logo.jpg " alt="" class="img-repsonsive"
+                            style="border-radius:15px ;" height="80px" ></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/hdfc-life.png" alt="" class="img-repsonsive"
+                            style="border-radius:18px;" height="90px" ></a>
+                </div>
+                <div class=" col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/yesbank-logo.png" alt="" class="img-repsonsive"
+                            style="border-radius:15px;" height="80px"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/agies-resources.jpg" alt="" class="img-repsonsive"
+                            style="border-radius:15px;" height="80px"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/sam-group.png" alt="" class="img-repsonsive"
+                            style="border-radius:15px;" height="80px" width="5px"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/technosys.jpg" alt="" class="img-repsonsive"
+                            style="border-radius:15px;" height="80px"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/technocrates-logo.jpg" alt="" class="img-repsonsive"
+                            style="border-radius:15px;"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/vask-logo.jpg" alt="" class="img-repsonsive"
+                            style="border-radius:15px;" height="80px"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/vyapak-logo.jpg" alt="" class="img-repsonsive"
+                            style="border-radius:15px;" height="80px"></a>
+                </div>
+               
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/surevin-logo.png" alt="" class="img-repsonsive"
+                            style="border-radius:15px;" height="80px"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/teleperformance-logo.png" alt="" class="img-repsonsive"
+                            style="border-radius:15px;" height="80px"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/venus-logo2.jpg" alt="" class="img-repsonsive"
+                            style="border-radius:15px;" height="80px"></a>
+                </div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>About US</h3>
+                        </div>
+                        <p>MMT Institute is one of the best technical institute which provide you the knowledge and
+                            techniques to make Self-Employed legally through using technical Skills (like, SEO, Blogger,
+                            YouTube, Affiliate marketing, Digital Marketing and E-commerce) and also conduct classes for
+                            SEO ,Software Testing, C, C++, JAVA, Web Designing and Graphics designing, having
+                            experienced faculties.</p>
+                        <div class="footer-right">
+                            <ul class="footer-links-soi">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            </ul><!-- end links -->
+                        </div>
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Information Link</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Contact Details</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="mailto:#">info@mmtinstitute.in</a></li>
+                            <li><a href="#">www.mmtinstitute.in</a></li>
+                            <li>C-3, Indraprashtha Bhawan, Padmanabh Nagar Near Prabhat Square Bhopal ., Bhopal, Madhya
+                                Pradesh, 462023</li>
+                            <li> 9644004360</li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-center">
+                    <p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#">MMT INSTITUTE</a> Design
+                        By :
+                        <a href="https://html.design/"></a>
+                    </p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+    <script src="js/timeline.min.js"></script>
+    <script>
+        // When the user clicks on <div>, open the popup
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+    </script>
+    <script>
+        timeline(document.querySelectorAll('.timeline'), {
+            forceVerticalMode: 700,
+            mode: 'horizontal',
+            verticalStartPosition: 'left',
+            visibleItems: 4
+        });
+    </script>
+    <script>
+        window.addeventlistener('load',
+            function () {
+                setTimeout(
+                    function open(event) {
+                        document.querySelector('.popup').style.display = "block";
+                    }, 2000
+
+
+
+
+                )
+            }
+        );
+
+    </script>
+</body>
+
+</html>
